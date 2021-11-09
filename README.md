@@ -22,7 +22,7 @@ Chức năng của dự án bao gồm nhận ảnh, phát hiện con vật và t
 - API-detection: api này thực hiện nhiệm vụ nhận ảnh vào thông báo nhận thành công, đồng thời thực hiện phát hiện con vật trong ảnh và lưu kết quả vào cơ sở dữ liệu.
 - API-query: api này thực hiện nhiệm vụ truy vấn cơ sở dữ liệu khi nhận vào một id. Nếu ảnh của id đó đã thực hiện phát hiện con vật thành công thì trả về kết quả phát hiện, ngược lại thì thông báo đang xử lý.  
 
-### Bắt đầu nhanh  
+### Hướng dẫn 
 #### Chuẩn bị cơ sở dữ liệu
 Đầu tiên bạn clone dự án về, nhập mật tài khoản và mật khẩu khi được yêu cầu:
 '''
