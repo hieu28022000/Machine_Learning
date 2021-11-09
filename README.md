@@ -7,16 +7,16 @@
 
 ## Cấu trúc của dự án  
 Cấu trúc của dự án được phân chia như sau:  
-- api-production
-  |- docs: thông tin về 2 API
-  |- src  
-  | |- api_detection: chứa mã nguồn của API-detection và module phát hiện con vật.
-  | |- api_query: chứa mã nguồn của API-query.
-  | |- mysql_database: chứa cơ sở dữ liệu của dự án.
-  |- test
-  | |- detection_api: chứa unit test của API-detection (1 request/sec, 5 request/sec, 1 request/min, 5request/min)
-  | |- query_api: chứa unit test của API-query (1 request/sec, 5 request/sec, 1 request/min, 5request/min)
-  |- README.md
+- api-production   
+  |- docs: thông tin về 2 API   
+  |- src   
+  | |- api_detection: chứa mã nguồn của API-detection và module phát hiện con vật.   
+  | |- api_query: chứa mã nguồn của API-query.   
+  | |- mysql_database: chứa cơ sở dữ liệu của dự án.   
+  |- test   
+  | |- detection_api: chứa unit test của API-detection (1 request/sec, 5 request/sec, 1 request/min, 5request/min)   
+  | |- query_api: chứa unit test của API-query (1 request/sec, 5 request/sec, 1 request/min, 5request/min)   
+  |- README.md   
 
 ## Chức năng và hướng dẫn  
 ### Chức năng của dự án  
