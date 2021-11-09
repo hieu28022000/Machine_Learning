@@ -10,7 +10,7 @@ Cấu trúc của dự án được phân chia như sau:
 - api-production   
   |-- docs: thông tin về 2 API   
   |-- src   
-  |   |-- api_detection: chứa mã nguồn của API-detection và module phát hiện con vật.   
+  |    |-- api_detection: chứa mã nguồn của API-detection và module phát hiện con vật.   
   |   |-- api_query: chứa mã nguồn của API-query.   
   |   |-- mysql_database: chứa cơ sở dữ liệu của dự án.   
   |-- test   
