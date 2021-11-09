@@ -25,30 +25,30 @@ Chức năng của dự án bao gồm nhận ảnh, phát hiện con vật và t
 ### Hướng dẫn 
 #### Chuẩn bị cơ sở dữ liệu  
 Đầu tiên bạn clone dự án về, nhập mật tài khoản và mật khẩu khi được yêu cầu:  
-'''
+```
 $git clone http://devops.runsystem.info/researchproject/api-production.git
 $cd api-production/
-'''  
-Tiếp theo bạn cần chuẩn bị '''src/api_detection/api/authorization/db/1/private_key.pem'''. [Download](https://we.runsystem.info/download/attachments/26545544/private_key.pem?version=1&modificationDate=1624413302138&api=v2&download=true)   
+```  
+Tiếp theo bạn cần chuẩn bị ```src/api_detection/api/authorization/db/1/private_key.pem```. [Download](https://we.runsystem.info/download/attachments/26545544/private_key.pem?version=1&modificationDate=1624413302138&api=v2&download=true)   
 Vì dự án được xây dựng và thực hiện trên nền tảng Docker nên bạn cần có Docker trên thiết bị của mình.   
-Sau đó bạn cần di chuyển đến '''src/mysql_database/''' và thực hiện xây dựng container chứa cơ sở dữ liệu.  
-'''
+Sau đó bạn cần di chuyển đến ```src/mysql_database/``` và thực hiện xây dựng container chứa cơ sở dữ liệu.  
+```
 $cd src/mysql_database/  
 $docker compose up
-'''  
+```  
 Giờ đây bạn có thể thực hiện kết nối tới cơ sở dữ liệu và tạo bảng dữ liệu.  
-'''
+```
 $docker exec -it container_mysql_id bash  
 mysql>USE detect_db;  
 mysql>CREATE TABLE result_detect (image_id VARCHAR(5), bboxes VARCHAR(200))  
-'''  
+```  
 Ở đây chúng tôi tạo một bảng dữ liệu result_detect với 2 cột dữ liệu là image_id và bboxes.  
 
 #### Khởi chạy api  
-Để khởi chạy api, chúng tôi đã cung cấp cho bạn một Dockerfile ở mỗi api để bạn có thể nhanh chóng xây dựng các container. Ngoài ra bạn cũng cần cài đặt thư viện '''opencv-python version 4.4.0.42'''  
-'''
+Để khởi chạy api, chúng tôi đã cung cấp cho bạn một Dockerfile ở mỗi api để bạn có thể nhanh chóng xây dựng các container. Ngoài ra bạn cũng cần cài đặt thư viện `opencv-python version 4.4.0.42```  
+```
 pip install opencv-python==4.4.0.42
-'''  
+```  
 Bây giờ bạn đã đã có thể thử nghiệm api với url sau:
 - API-detection: http://host:80/ocr/v1/recognition
 - API-querry: http://host:80//detection/query
