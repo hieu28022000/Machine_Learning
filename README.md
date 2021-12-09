@@ -41,7 +41,7 @@ Trước khi thực hiện đánh giá mô hình cần tải mô hình từ thư
 
 # Hướng dẫn đánh giá text detection  
 ## Chuẩn bị dữ liệu để đánh giá  
-Bộ dữ liệu dùng để đánh giá mô hình text detection là các hình ảnh về báo chí, băng rôn, bảng quản cáo,... có chữ.   
+Bộ dữ liệu dùng để đánh giá mô hình text detection là các hình ảnh về báo chí, băng rôn, bảng quảng cáo,... có chữ.   
 Tạo một folder đặt tên là data và có cùng cấp với file test.py.  
 Trong folder data tạo thêm hai folder nữa là images và labels. Folder images sẽ chứa ảnh để test và folder labels chứa các file ground truth của ảnh.  
 Bộ dữ liệu có cấu trúc như sau: 
