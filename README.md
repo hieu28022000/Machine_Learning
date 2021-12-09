@@ -18,6 +18,7 @@
 - text_detection/  
    - .gitkeep
    - evaluate.py  
+   - test.py
 - text_recognition/  
    - .gitkeep  
    - evaluate.py  
