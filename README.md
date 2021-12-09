@@ -1,12 +1,6 @@
 # Machine_Learning
 # Test OCR   
 
-# Docker
-## Build image
-```docker build -t [image's name] .```
-## Run container 
-```docker run -it --name [container's name] -v `pwd`/:/host [image's name] /bin/bash```
-
 # Cấu trúc dự án  
 - soc/core/  
    - text_detection
@@ -23,8 +17,17 @@
    - .gitkeep  
    - evaluate.py  
    - model_predict.py  
+   - vie_reg_evaluate.py
+   - test_module.py
+   - exception.json
 - .gitignore  
 - README.md  
+
+# Docker
+## Build image
+```docker build -t [image's name] .```
+## Run container 
+```docker run -it --name [container's name] -v `pwd`/:/host [image's name] /bin/bash```
 
 # Model soc  
 Mô hình text detection và text recognition được lấy từ thư viện soc.  
