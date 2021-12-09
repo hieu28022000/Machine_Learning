@@ -42,8 +42,8 @@ Trước khi thực hiện đánh giá mô hình cần tải mô hình từ thư
 # Hướng dẫn đánh giá text detection  
 ## Chuẩn bị dữ liệu để đánh giá  
 Bộ dữ liệu dùng để đánh giá mô hình text detection là các hình ảnh về báo chí, băng rôn, bảng quảng cáo,... có chữ.   
-Tạo một folder đặt tên là data và có cùng cấp với file test.py.  
-Trong folder data tạo thêm hai folder nữa là images và labels. Folder images sẽ chứa ảnh để test và folder labels chứa các file ground truth của ảnh.  
+Tạo một folder đặt tên là ```data``` và có cùng cấp với file ```test.py```.  
+Trong folder ```data``` tạo thêm hai folder nữa là ```images``` và ```labels```. Folder ```images``` sẽ chứa ảnh để test và folder ```labels``` chứa các file ground truth của ảnh.  
 Bộ dữ liệu có cấu trúc như sau: 
 - data  
    - images  
@@ -54,7 +54,7 @@ Bộ dữ liệu có cấu trúc như sau:
       - image1.txt  
       - image2.txt  
       - . . .  
-Với mỗi ảnh sẽ có tên tương ứng với file txt có trong thư mục labels, ví dụ: ảnh image1.jpg sẽ có ground truth chứa trong file image1.txt.  
+Với mỗi ảnh sẽ có tên tương ứng với file txt có trong thư mục ```labels```, ví dụ: ảnh image1.jpg sẽ có ground truth chứa trong file image1.txt.  
 Trong các file txt sẽ có nội dung là các bounding box có trong ảnh, mỗi dòng trong file txt tương ứng với một bounding box.  
 Các bounding box có format như sau: ```x1,y1,x2,y2,x3,y3,x4,y4```.  
 
