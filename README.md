@@ -5,7 +5,7 @@
 ## Build image
 ```docker build -t [image's name] .```
 ## Run container 
-```docker run -it --name [container's name] -v `pwd`/:/host [image's name] /bin/bash
+```docker run -it --name [container's name] -v `pwd`/:/host [image's name] /bin/bash```
 
 # Cấu trúc dự án  
 - soc/core/  
