@@ -2,7 +2,9 @@
 # Test OCR   
 
 # Cấu trúc dự án  
+- soc/core/  
 - text_detection/  
+   - .gitkeep
    - evaluate.py  
 - text_recognition/  
    - .gitkeep  
@@ -13,6 +15,7 @@
 
 # Hướng dẫn đánh giá text detection  
 ## Tải bộ dữ liệu dùng để đánh giá  
+Bộ dữ liệu dùng để đánh giá mô hình text detection là các hình ảnh về báo chí, băng rôn, bảng quản cáo,... có chữ. Bộ dữ liệu có cấu trúc như sau: 
 
 # Hướng dẫn đánh giá text recognition  
 ## Chuẩn bị dữ liệu để đánh giá  
@@ -33,8 +36,8 @@ Bạn có thể tự chuẩn bị dữ liệu theo cấu trúc ở trên. Tuy nh
 |vie_recognize|Bộ dữ liệu đánh giá nhận dạng chữ in Tiếng Việt|"/media/rshcm/1TB/data/printed_vie_data/vie_recognize_data.zip"|  
 |jap_recognize|Bộ dữ liệu đánh giá nhận dạng chữ in Tiếng Nhật|def|  
 ## Đánh giá mô hình  
-Ta cập nhật đường dẫn đến bộ dữ liệu trong file evaluate_text_recognition.py tại dataset_path.  
+Ta cập nhật đường dẫn đến bộ dữ liệu trong file ```evaluate_text_recognition.py``` tại ```dataset_path```.  
 Sau đó chúng ta thực hiện đánh giá mô hình text recognition:  
 ```$python3 evaluate_text_recognition.py```  
 
-Kết quả đánh giá sẽ được lưu thành file result_evaluate_reg.csv bao gồm average distance và accuracy score.
+Kết quả đánh giá sẽ được lưu thành file result_evaluate_reg.csv bao gồm ```average distance``` và ```accuracy score```.
