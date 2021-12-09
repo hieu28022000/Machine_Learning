@@ -57,11 +57,11 @@ Bạn có thể tự chuẩn bị dữ liệu theo cấu trúc ở trên. Tuy nh
 |vie_recognize|Bộ dữ liệu đánh giá nhận dạng chữ in Tiếng Việt|"/media/rshcm/1TB/data/printed_vie_data/vie_recognize_data.zip"|  
 |jap_recognize|Bộ dữ liệu đánh giá nhận dạng chữ in Tiếng Nhật|def|  
 ## Đánh giá mô hình  
-Ta cập nhật đường dẫn đến bộ dữ liệu trong file ```text_recognition/evaluate_text_recognition.py``` tại ```dataset_path```.  
+Ta cập nhật đường dẫn đến bộ dữ liệu trong file ```text_recognition/vie_reg_evaluate.py``` tại ```dataset_path```.  
 Sau đó chúng ta thực hiện đánh giá mô hình text recognition:  
 ```
 $cd text_recognition/   
-$python3 evaluate_text_recognition.py
+$python3 vie_reg_evaluate.py
 ```  
 
 Kết quả đánh giá sẽ được lưu thành file result_evaluate_reg.csv bao gồm ```average distance``` và ```accuracy score```.
