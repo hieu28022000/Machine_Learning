@@ -9,6 +9,12 @@
 
 # Cấu trúc dự án  
 - soc/core/  
+   - text_detection
+      - printed_vie_detection
+      - printed_jp_detection
+   - text_recognition
+      - printed_vie_reconition
+      - printed_jp_recognition
 - text_detection/  
    - .gitkeep
    - evaluate.py  
@@ -18,6 +24,15 @@
    - model_predict.py  
 - .gitignore  
 - README.md  
+
+# Model soc  
+Mô hình text detection và text recognition được lấy từ thư viện soc.  
+Thông tin hiện tại:  
+- Tên thư viện: soc
+- Version: 0.9.11
+- Ngày cập nhật: 19-11-2021
+- Link: "/media/rshcm/1TB/data/soc-19112021-0.9.11.zip"
+Trước khi thực hiện đánh giá mô hình cần tải mô hình từ thư viện soc và cấu trúc theo cấu trúc của dự án.
 
 # Hướng dẫn đánh giá text detection  
 ## Tải bộ dữ liệu dùng để đánh giá  
