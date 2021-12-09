@@ -35,7 +35,7 @@ Thông tin hiện tại:
 - Tên thư viện: soc
 - Version: 0.9.11
 - Ngày cập nhật: 19-11-2021
-- Link: "/media/rshcm/1TB/data/soc-19112021-0.9.11.zip"
+- Link: "/media/rshcm/1TB/data/soc-19112021-0.9.11.zip"  
 Trước khi thực hiện đánh giá mô hình cần tải mô hình từ thư viện soc và cấu trúc theo cấu trúc của dự án.
 
 # Hướng dẫn đánh giá text detection  
